@@ -1,62 +1,66 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RailsTokyo</title>
-  <meta content="RailsTokyo">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-      overflow: hidden;
-    }
-
-    body {
-      display: flex;
-      justify-content: center; 
-      align-items: center;    
-      font-family: 'Inter', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif; 
-      background-color: #121212; 
-      color: #e0e0e0;            
-      text-align: center;
-    }
-
-    
-    .coming-soon {
-      font-size: 3.5rem; 
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
-      animation: fadeIn 2s ease-in-out;
-    }
-
-    
-    @keyframes fadeIn {
-        from {
-          opacity: 0;
-          transform: translateY(10px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-    }
-
-    
-    @media (max-width: 600px) {
-      .coming-soon {
-        font-size: 2rem; 
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rails Tokyo - Ruby on Rails 技術ミートアップ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mate:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/common.css">
 </head>
-<body>
-  <div class="coming-soon">Coming Soon...</div>
+<body class="antialiased">
+
+    <!-- ヘッダー -->
+    <header class="bg-rails-tokyo/80 backdrop-blur-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2">
+                <img src="./images/logos/horizontal.png" alt="Rails Tokyo Logo" class="h-20 w-70">
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="./policies/" class="font-bold hover:text-ruby transition-colors">Policies</a>
+                <a href="./code-of-conduct/" class="font-bold hover:text-ruby transition-colors">CoC</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-teal text-2xl">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- モバイルメニュー -->
+        <div id="mobile-menu" class="hidden md:hidden bg-rails-tokyo/95">
+            <a href="./policies/" class="block py-2 px-6 text-teal hover:bg-teal hover:text-white">Policies</a>
+            <a href="./code-of-conduct/" class="block py-2 px-6 text-teal hover:bg-teal hover:text-white">CoC</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ヒーローセクション -->
+        <section class="text-center py-20 md:py-32 px-6">
+            <div class="container mx-auto">
+                <img src="./images/logos/horizontal.png" alt="Rails Tokyo Est. 2025" class="max-w-md md:max-w-2xl mx-auto mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">東京の中心で、Rails について語り合う。</h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">
+                    Rails Tokyo は、Ruby on Rails に関心のある開発者のための技術 Meetup です。
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-teal text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p class="mb-4">Follow us for updates!</p>
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="https://x.com/railstokyo_team" class="hover:opacity-80 transition-opacity">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+            </div>
+            <p class="text-sm text-white/70">&copy; 2025 Rails Tokyo Org. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./js/common.js"></script>
 </body>
 </html>
