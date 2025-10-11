@@ -1,0 +1,86 @@
+/* ロゴの雰囲気に合わせたカスタム設定 */
+:root {
+    --color-rails-tokyo-base: #EFDFD3;
+    --color-rails-tokyo-green: #79B6B9;
+    --color-rails-tokyo-dark-green: #2D433E;
+    --color-rails-tokyo-red: #79B6B9;
+    --color-teal: #2D6A6C;
+    --color-teal-dark: #245557;
+    --color-ruby: #E53170;
+    --color-ruby-dark: #c2255c;
+}
+
+body {
+    font-family: 'Mate', serif;
+    background-color: #EFDFD3;
+    color: var(--color-teal);
+}
+
+h1, h2, h3 {
+    font-family: 'Mate', serif;
+}
+
+.bg-rails-tokyo {
+    background-color: var(--color-rails-tokyo-base);
+}
+
+.bg-teal {
+    background-color: var(--color-teal);
+}
+
+.text-teal {
+    color: var(--color-teal);
+}
+
+.text-ruby {
+    color: var(--color-ruby);
+}
+
+.border-teal {
+    border-color: var(--color-teal);
+}
+
+.btn-ruby {
+    background-color: var(--color-ruby);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-ruby:hover {
+    background-color: var(--color-ruby-dark);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--color-teal);
+    border: 2px solid var(--color-teal);
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: var(--color-teal);
+    color: white;
+}
+
+/* リンクのスタイル */
+a {
+    color: var(--color-ruby);
+    text-decoration: underline;
+    text-decoration-color: rgba(229, 49, 112, 0.3);
+    text-underline-offset: 2px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-ruby-dark);
+    text-decoration-color: var(--color-ruby-dark);
+}
+
+/* ヘッダーのナビゲーションリンクは下線なし */
+header nav a {
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: var(--color-ruby);
+}
