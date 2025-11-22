@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rails Tokyo - Ruby on Rails 技術ミートアップ</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mate:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./styles/css/common.css">
 </head>
 <body class="antialiased">
 
@@ -19,8 +16,10 @@
                 <img src="./images/logos/horizontal.png" alt="Rails Tokyo Logo" class="h-20 w-70">
             </a>
             <nav class="hidden md:flex space-x-8">
-                <a href="./policies/" class="font-bold hover:text-ruby transition-colors">Policies</a>
-                <a href="./code-of-conduct/" class="font-bold hover:text-ruby transition-colors">CoC</a>
+                <a href="./contents/policies/index.html" class="font-bold hover:text-ruby transition-colors">Policies</a>
+                <a href="./contents/code-of-conduct/index.html" class="font-bold hover:text-ruby transition-colors">CoC</a>
+                <a href="./contents/team/index.html" class="font-bold hover:text-ruby transition-colors">Team</a>
+                <a href="https://railstokyo.connpass.com/" class="font-bold hover:text-ruby">Connpass</a>
             </nav>
             <button id="mobile-menu-button" class="md:hidden text-teal text-2xl">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -30,8 +29,10 @@
         </div>
         <!-- モバイルメニュー -->
         <div id="mobile-menu" class="hidden md:hidden bg-rails-tokyo/95">
-            <a href="./policies/" class="block py-2 px-6 text-teal hover:bg-teal hover:text-white">Policies</a>
-            <a href="./code-of-conduct/" class="block py-2 px-6 text-teal hover:bg-teal hover:text-white">CoC</a>
+            <a href="./policies/index.html" class="block py-2 px-6 text-teal hover:bg-teal hover:text-white">Policies</a>
+            <a href="./code-of-conduct/index.html" class="block py-2 px-6 text-teal hover:bg-teal hover:text-white">CoC</a>
+            <a href="./team/index.html" class="block py-2 px-6 text-teal hover:bg-teal hover:text-white">Team</a>
+            <a href="https://railstokyo.connpass.com/" class="block py-2 px-6 text-teal hover:bg-teal hover:text-white">Connpass</a>
         </div>
     </header>
 
@@ -58,9 +59,10 @@
                 </a>
             </div>
             <p class="text-sm text-white/70">&copy; 2025 Rails Tokyo Org. All Rights Reserved.</p>
+            <p class="text-sm text-white/70">Font: モボフォント <a href="https://flopdesign.booth.pm/items/4647262" class="underline hover:text-white">https://flopdesign.booth.pm/items/4647262</a></p>
         </div>
     </footer>
 
-    <script src="./js/common.js"></script>
+    <script src="./scripts/common.js"></script>
 </body>
 </html>
