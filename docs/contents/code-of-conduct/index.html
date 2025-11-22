@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行動規範 | Rails Tokyo 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../styles/css/common.css">
+</head>
+<body class="antialiased">
+
+    <!-- ヘッダー -->
+    <header class="bg-rails-tokyo/80 backdrop-blur-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../../index.html" class="flex items-center space-x-2">
+                <img src="../../images/logos/horizontal.png" alt="Rails Tokyo Logo" class="h-20 w-70">
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="../policies/index.html" class="font-bold hover:text-ruby transition-colors">Policies</a>
+                <a href="../code-of-conduct/index.html" class="font-bold hover:text-ruby">CoC</a>
+                <a href="../team/index.html" class="font-bold hover:text-ruby">Team</a>
+                <a href="https://railstokyo.connpass.com/" class="font-bold hover:text-ruby">Connpass</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-teal text-2xl">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- モバイルメニュー -->
+        <div id="mobile-menu" class="hidden md:hidden bg-rails-tokyo/95">
+            <a href="../policies/index.html" class="block py-2 px-6 text-teal hover:bg-teal hover:text-white">Policies</a>
+            <a href="../code-of-conduct/index.html" class="block py-2 px-6 text-teal hover:bg-teal hover:text-white">CoC</a>
+            <a href="../team/index.html" class="block py-2 px-6 text-teal hover:bg-teal hover:text-white">Team</a>
+            <a href="https://railstokyo.connpass.com/" class="block py-2 px-6 text-teal hover:bg-teal hover:text-white">Connpass</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 max-w-4xl">
+        <h1 class="text-4xl md:text-5xl font-bold mb-8 text-center">Code of Conduct</h1>
+
+        <div class="prose prose-lg max-w-none">
+            <p class="text-lg mb-6">
+                RailsTokyoは、Ruby on Railsとその周辺技術をテーマに、学び合い・つながり合い・支え合うコミュニティイベントです。<br>
+                私たちは、参加するすべての人が安心して交流し、自由に学び、前向きに挑戦できる場であることを大切にしています。<br>
+                そのため、RailsTokyoでは以下の行動規範を定めています。
+            </p>
+
+            <h2 class="text-2xl md:text-3xl font-bold mt-12 mb-4 border-b-2 border-teal pb-2">1. リスペクトと思いやりを忘れずに</h2>
+            <p class="mb-6">
+                すべての参加者・登壇者・スタッフは、互いの背景・経験・考えを尊重し合いましょう。<br>
+                知識やスキルの違いを優劣ではなく「多様性」として受け入れ、互いに敬意を持って関わることを大切にします。
+            </p>
+
+            <h2 class="text-2xl md:text-3xl font-bold mt-12 mb-4 border-b-2 border-teal pb-2">2. 安心・安全なコミュニケーションを</h2>
+            <p class="mb-6">
+                RailsTokyoは、誰もが安心して発言できる場を目指しています。<br>
+                差別的・攻撃的・ハラスメントと感じられるような言動はお控えください(<a href="../policies/">アンチハラスメントポリシー</a>はこちら)。<br>
+                相手の立場に立った、思いやりあるコミュニケーションを心がけましょう。
+            </p>
+
+            <h2 class="text-2xl md:text-3xl font-bold mt-12 mb-4 border-b-2 border-teal pb-2">3. チャレンジを歓迎します</h2>
+            <p class="mb-6">
+                登壇も参加も、はじめの一歩を応援しています。<br>
+                「まだ初心者だから…」という遠慮は必要ありません。<br>
+                聞く人も、話す人も、互いのチャレンジを温かく受け止めましょう。
+            </p>
+
+            <h2 class="text-2xl md:text-3xl font-bold mt-12 mb-4 border-b-2 border-teal pb-2">4. つながりは、未来への投資</h2>
+            <p class="mb-6">
+                RailsTokyoでの出会いや会話は、きっと次の学びやチャンスにつながります。<br>
+                その場限りではない、継続的な関係を育てられるような、誠実でオープンな関わりを大切にしましょう。
+            </p>
+
+            <p class="mb-6">
+                私たちは、この行動規範がすべての参加者にとってポジティブな体験を生み出す土台になると信じています。<br>
+                ルールというより「みんなで良い場をつくるための約束ごと」として、ぜひご理解とご協力をお願いいたします。
+            </p>
+
+            <p class="font-bold">
+                RailsTokyo運営チーム
+            </p>
+        </div>
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-teal text-white mt-16">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p class="mb-4">Follow us for updates!</p>
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="https://x.com/railstokyo_team" class="hover:opacity-80 transition-opacity">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+            </div>
+            <p class="text-sm text-white/70">&copy; 2025 Rails Tokyo Org. All Rights Reserved.</p>
+            <p class="text-sm text-white/70">Font: モボフォント <a href="https://flopdesign.booth.pm/items/4647262" class="underline hover:text-white">https://flopdesign.booth.pm/items/4647262</a></p>
+        </div>
+    </footer>
+
+    <script src="./scripts/common.js"></script>
+</body>
+</html>
