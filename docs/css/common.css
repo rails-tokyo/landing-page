@@ -1,3 +1,32 @@
+/* MOBO フォントの定義 */
+@font-face {
+    font-family: 'MOBO';
+    src: url('../fonts/MOBO-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MOBO';
+    src: url('../fonts/MOBO-ExtraLight.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MOBO';
+    src: url('../fonts/MOBO-SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MOBO';
+    src: url('../fonts/MOBO-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
 /* ロゴの雰囲気に合わせたカスタム設定 */
 :root {
     --color-rails-tokyo-base: #EFDFD3;
@@ -11,13 +40,14 @@
 }
 
 body {
-    font-family: 'Mate', serif;
+    font-family: 'MOBO', sans-serif;
     background-color: #EFDFD3;
     color: var(--color-teal);
 }
 
 h1, h2, h3 {
-    font-family: 'Mate', serif;
+    font-family: 'MOBO', sans-serif;
+    font-weight: 600;
 }
 
 .bg-rails-tokyo {
